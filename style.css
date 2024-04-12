@@ -1,0 +1,92 @@
+ @font-face {
+    
+    src: url(fonts/Catamaran-VariableFont_wght.ttf);
+    font-family:catamaran;
+ }
+ * {
+    text-decoration:none;
+ }
+ body{
+    background-color: #f3f3f3;
+ } 
+ header nav ul{
+    display: block;
+    list-style-type: none;
+    margin-top:-40px;
+    width:fit-content;
+    
+
+}
+header nav ul li{
+    display: inline;
+    float:left;
+    padding: 0 16px ;
+    
+
+}
+ header nav ul li a{
+    font-family:catamaran;
+    font-weight: 16px;
+    color:#111;
+}
+
+.header-cases{
+    text-decoration: none;
+}
+header .header-brand{ /* just the logo*/
+    text-decoration: none;
+    font-family:catamaran;
+    font-weight: bold;
+    font-size:30px;
+    color:#111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding:20px 0;;
+}
+header{
+    margin-top: -4px;
+    background-color: #fff;
+    height: 100px;
+   
+}
+header .header-cases{
+    display:none; /*it should not be shown when we are on phone*/
+}
+/*index-banner*/
+
+.index-banner{
+    width:100%;
+    margin-top:-40px;
+    height:calc(100vh);
+    background-image:url('img/P.jpg');
+    background-repeat: none;
+    background-position:center;
+    background-size:cover;
+    display:table;
+}
+.vertical-center{
+    display:table-cell;
+    vertical-align: middle;
+}
+.index-banner h2{
+    text-align: center;
+    font-family: catamaran;
+    font-size:50px;
+    font-weight: 900;
+    color:#fff;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 60px;
+
+}
+.index-banner h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight: 100;
+    font-style:italic;
+    color:#fff;
+    line-height: 40px;
+
+}
