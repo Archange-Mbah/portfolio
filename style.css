@@ -9,11 +9,24 @@
  body{
     
  } 
+
+ @media only screen and (min-width: 768px ){
+ header nav{
+    width: 100%;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    padding: 0 16px;
+    margin-top:20px;
+    height: 50px;
+    margin-top:30px;
+ }
+}
  header nav ul{
     display: block;
     list-style-type: none;
     margin-top:-40px;
     width:fit-content;
+    align-items: center;
     
 
 }
@@ -24,15 +37,14 @@ header nav ul li{
     
 
 }
+
  header nav ul li a{
     font-family:catamaran;
     font-weight: 16px;
     color:#111;
 }
 
-.header-cases{
-    text-decoration: none;
-}
+
 header .header-brand{ /* just the logo*/
     text-decoration: none;
     font-family:catamaran;
@@ -60,12 +72,25 @@ header .header-cases{
     width:100%;
     margin-top:-40px;
     height:calc(100vh);
-    background-image:url('img/P.jpg');
-    background-repeat: none;
-    background-position:center;
-    background-size:cover;
+    background-image:url('img/arol.jpg');
+    background-size: cover; /*contain*/
+    background-color: #111;
+    background-position:center;;
     display:table;
 }
+@media only screen and (min-width: 768px ){
+    .index-banner{
+    margin-top:40px;
+}
+}
+@media only screen and (min-width: 1000px){
+    .index-banner{
+       background-size: contain;
+    }
+}
+
+
+
 .vertical-center{
     display:table-cell;
     vertical-align: middle;
@@ -90,12 +115,35 @@ header .header-cases{
     line-height: 40px;
 
 }
+.download-button {
+    margin-top:500px;
+    margin-left: 42%;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    background-color:black ;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: white;
+    color:black;
+}
+@media only screen and (max-width: 768px ){
+   .download-button{
+    margin-left: 30%;	
+   }
+}
 
 .index-links div{
     margin: 16px 16px 0;
     width:calc(100%-60px);
     height: 100px;
     background-color:#f2f2f2;
+    
 }
 
 .index-links div h3{
@@ -119,6 +167,7 @@ footer{
     height: 100px;
     text-align: center;
     align-items: center;
+
 }
 
   
@@ -127,6 +176,6 @@ footer ul li{
  }
 footer ul li a{
     font-family: Catamaran;
-    font-size:11px;
+    font-size:12px;
     color:#fff;
 }
